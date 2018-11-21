@@ -1,0 +1,50 @@
+﻿@model WesleyNunes.Models.Pedido
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Pedido</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NomeMedicamento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NomeMedicamento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.QtdeMedicamento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.QtdeMedicamento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CodCliente)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CodCliente)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataEntreg)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataEntreg)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdPedido }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
