@@ -15,7 +15,7 @@ namespace MVC_empty.Controllers
         public ActionResult Index()
         {
 
-            HttpResponseMessage response = GlobalVari.WebApiClient.GetAsync("PedidosApi").Result;
+            HttpResponseMessage response = GlobalVari.WebApiClient.GetAsync("PedidosAPI").Result;
             return View(response.Content.ReadAsAsync<IEnumerable<Models.PedidoMvc>>().Result);
 
 
