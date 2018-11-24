@@ -9,7 +9,7 @@ namespace MVC_empty.Models
 {
     public class PedidoMvc
     {
-            [Key]
+        [Key]
             public int IdPedido { get; set; }
         [Display(Name = "Nome")]
         [Required(ErrorMessage = "Nome  obrigatório", AllowEmptyStrings = false)]
